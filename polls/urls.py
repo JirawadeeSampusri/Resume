@@ -8,5 +8,4 @@ from django.conf.urls import url
 urlpatterns = [
     path('addprofile/',views.add_profile, name='add_profile'),
    
-] 
-
+]

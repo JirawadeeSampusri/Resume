@@ -5,15 +5,15 @@ from django.contrib.auth.models import AbstractUser
 
 class Info(models.Model):
     """ Model for put the infomation of event to database. """
-    photo = models.ImageField(upload_to='upload/', default='https://storage.googleapis.com/kvent_bucket/upload/no_img.png')
-    first_name = models.CharField("First Name", max_length=254)
-    last_name = models.CharField("Last Name", max_length=254)
-    gender =  models.CharField("Gender", max_length=254)
-    nationality = models.CharField("Nationality", max_length=254)
-    interest = models.TextField('Interest', default="", max_length=100)
-    email = models.EmailField("E-mail", max_length=254)
-    address = models.CharField("Address", max_length=125)
-    short_description = models.TextField('Short Description', default="", max_length=100)
+    photo = models.ImageField(upload_to='upload/', default=None)
+    first_name = models.CharField("First Name", default="",max_length=254)
+    last_name = models.CharField("Last Name", default="",max_length=254)
+    gender =  models.CharField("Gender", default="",max_length=254)
+    nationality = models.CharField("Nationality", default="",max_length=254)
+    interest = models.CharField('Interest', default="", max_length=100)
+    email = models.EmailField("E-mail", default="",max_length=254)
+    address = models.CharField("Address", default="",max_length=125)
+    short_description = models.CharField('Short Description', default="", max_length=100)
 
     def get_photo(self):
         return self.photo

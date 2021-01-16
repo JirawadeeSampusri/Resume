@@ -1,46 +1,44 @@
 from django import forms
-from .models import Event, User
+from .models import Info, Education
 from django.forms.widgets import Textarea
-from polls.models import User
-from django.contrib.auth.forms import UserCreationForm
 
 class InfoForm(forms.ModelForm):
     """ Form for inputing a new event """
     class Meta:
-        model = Event
+        model = Info
         fields = ['photo','first_name','last_name', 'gender', 'nationality', 'interest', 'email', 'address', 'short_description']
         photo = forms.ImageField()
         first_name = forms.CharField(
             widget=forms.TextInput(
-            attrs={'type':'input', 'id':'name-input'}
+            attrs={'type':'input', 'id':'first_name'}
             ))
         last_name = forms.CharField(
             widget=forms.TextInput(
-            attrs={'type':'input', 'id':'name-input'}
+            attrs={'type':'input', 'id':'last_name'}
             ))
         gender = forms.CharField(
             widget=forms.TextInput(
-            attrs={'type':'input', 'id':'gender-input'}
+            attrs={'type':'input', 'id':'gender'}
             ))
         nationality = forms.CharField(
             widget=forms.TextInput(
-            attrs={'type':'input', 'id':'nationality-input'}
+            attrs={'type':'input', 'id':'nationality'}
             ))
         interest = forms.CharField(
             widget=forms.TextInput(
-            attrs={'type':'input', 'id':'interest-input'}
+            attrs={'type':'input', 'id':'interest'}
             ))
         email = forms.CharField(
             widget=forms.TextInput(
-            attrs={'type':'input', 'id':'email-input'}
+            attrs={'type':'input', 'id':'email'}
             ))
         address = forms.CharField(
             widget=forms.TextInput(
-            attrs={'type':'input', 'id':'address-input'}
+            attrs={'type':'input', 'id':'address'}
             ))
         short_description = forms.CharField(
             widget=forms.TextInput(
-            attrs={'type':'input', 'id':'short-description-input'}
+            attrs={'type':'input', 'id':'short_description'}
             ))
         # arrange_time = forms.DateTimeField(
         #     input_formats=['YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ]'],
@@ -51,7 +49,7 @@ class InfoForm(forms.ModelForm):
 class EducationForm(forms.ModelForm):
     """ Form for inputing a new event """
     class Meta:
-        model = Event
+        model = Education
         fields = ['university','bachelor','major', 'start_study', 'end_study']
         university = forms.CharField(
             widget=forms.TextInput(

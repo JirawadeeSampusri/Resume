@@ -3,94 +3,55 @@
 
 <head>
     {% load static %}
-    <title> Kvent </title>
+    <title> Resume </title>
     <link rel="stylesheet" type="text/css" href="{% static '/css/add_profile.css' %}">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true">
+    {% comment %} <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true"> {% endcomment %}
 
 </head>
 <body>   
-    <li id="event-logo">Resume </li>
-    <div class="main">
-            <span class="text-title">Create Resume</span>
-            <hr class="line">
-            <div class="input">
-            <div class="photo">
-            Event Photo
-            {{ form.photo }}
-            </div>
-            <br>
-            Name
-            {{ form.first_name }} {{ form.last_name }}
-            Gender
-            {{ form.gender }}
-            Nationality
-            {{ form.nationality }}
-            Interest
-            {{ form.interest }}
-            Email
-            {{ form.email }}
-            Address
-            {{ form.address}}
-            Short Description
-            {{ form.short_description}}
-            Long Description
-            {{ form.long_description }}
-            <button id="submit-button" type="submit" value="POST"> SUBMIT </button>
-            </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</body>
-
-</html>
-{% comment %} <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    {% load static %}
-    <title> Kvent </title>
-    <link rel="stylesheet" type="text/css" href="{% static '/css/add_profile.css' %}">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true">
-
-</head>
-<body>   
-    <li id="event-logo">Resume </li>
+    <li id="event-logo">Resume</li>
+</form>
     <div class="main">
         <div class="create-container">
             <div class="wrap-container">
                 <form class="create-form" method="POST"  enctype="multipart/form-data">
                     {% csrf_token %}
-                    <span class="text-title">Create Event</span>
+                    <span class="text-title">Create Resume</span>
                     <hr class="line">
                     <div class="input">
                     <div class="photo">
-                    Event Photo
+                    Profile Photo
                     {{ form.photo }}
                     </div>
                     <br>
-                    Event Name
-                    {{ form.event_name }}
+                    Name
+                    {{ form.first_name }} {{ form.last_name }}
+                    <br>
+                    Gender
+                    {{ form.gender }}
+                    <br>
+                    Nationality
+                    {{ form.nationality }}
+                    <br>
+                    Interest
+                    {{ form.interest }}
+                    <br>
+                    Email
+                    {{ form.email }}
+                    <br>
+                    Address
+                    {{ form.address}}
+                    <br>
                     Short Description
                     {{ form.short_description}}
-                    Long Description
-                    {{ form.long_description }}
-                    Location
-                    {{ form.location}}
-                    Arrangement Date and Time (format YYYY-MM-DD 00:00)
-                    {{ form.arrange_time }}
-                    Number of people
-                    {{ form.number_people }} <br><h5>The number of people must be more than 10 </h5>
                     <button id="submit-button" type="submit" value="POST"> SUBMIT </button>
                     </div>
                 </form>
             </div>
         </div>
-    </div>
+    </div> 
 </body>
 
-</html> {% endcomment %}
+</html>
