@@ -1,0 +1,8 @@
+<html>
+<p>
+skojaihdlkgsj
+</p>
+{% for info in all_info %}
+    <a href="{% url 'profile' info.id %}"><h4>{{info.first_name}}</h4>
+{% endfor %}
+</html>

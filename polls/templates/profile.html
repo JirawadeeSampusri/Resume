@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <title>Profile Detail</title>
+    {% comment %} <link rel="stylesheet" type="text/css" href="{% static '/css/event-detail.css' %}">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true"> {% endcomment %}
+
+</head>
+
+<body>
+    <nav class="nav-bar">
+    </nav>
+    <div class="row">
+        <div class="">
+            <img src="{{ info.get_photo.url }}" width="350px" height="auto" />
+        </div>
+
+        <div class="">
+            <h4 id="head-style"> Profile Detail </h4>
+            <h3 id="info-style">{{ info.get_name }}</h3>
+            <h3 id="info-style">{{ info.get_email}}</h3>
+            <h3 id="info-style">{{ info.get_nationality }}</h3>
+            <h3 id="info-style">{{ info.get_gender }}</h3>
+            <h4 id="head-style"> Location </h4>
+            <h3 id="info-style">{{ info.get_address}}</h3>
+            <h3 id="info-style">{{ info.get_interest}}</h3>
+            <h3 id="info-style">{{ info.get_short_description }}</h3>
+         
+        </div>
+    </div>
+
+</body>
+
+
+</html>

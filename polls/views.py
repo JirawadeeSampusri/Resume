@@ -25,8 +25,16 @@ def add_profile(request):
                     nationality=nationality,interest=interest,email=email,
                     address=address,short_description=short_description)
         info.save()
+        return render(request, 'profile.html', {'info': info})
     return render(request, 'add_profile.html', {'form': form})
-  
+def profile(request,info_id):
+    info = get_object_or_404(Info, pk=info_id)
+    return render(request, 'profile.html', {'info':info})
+
+def index(request):
+    all_info = Info.objects.all()
+    print(all_info)
+    return render(request, 'index.html', {'all_info':all_info})
 # def resume(request):
 #     """ 
 #     Function for create event with form and only logged in user can create the event 

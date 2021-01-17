@@ -7,5 +7,6 @@ from django.conf.urls import url
 
 urlpatterns = [
     path('addprofile/',views.add_profile, name='add_profile'),
-   
+    path('profile/<int:info_id>/',views.profile, name='profile'),
+    path('index/',views.index, name='index')
 ]
