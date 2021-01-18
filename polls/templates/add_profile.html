@@ -4,10 +4,14 @@
 <head>
     {% load static %}
     <title> Resume </title>
-    <link rel="stylesheet" href="{% static 'polls/css/add_profile.css' %}">
+    <link rel="stylesheet" href="{% static '/css/add_profile.css' %}">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    {% comment %} <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true"> {% endcomment %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
 
 </head>
 <body>   
@@ -17,16 +21,18 @@
             <div class="wrap-container">
                 <form class="create-form" method="POST"  enctype="multipart/form-data">
                     {% csrf_token %}
-                    <span class="text-title">Resume</span>
+                    <span class="text-title">Create Resume</span>
                     <hr class="line">
                     <div class="input">
+                   
                     <div class="photo">
                     Profile Photo
                     {{ form.photo }}
                     </div>
                     <br>
                     Name
-                    {{ form.first_name }} {{ form.last_name }}
+                    {{ form.first_name }} 
+                    {{ form.last_name }}
                     <br>
                     Gender
                     {{ form.gender }}
@@ -54,3 +60,4 @@
 </body>
 
 </html>
+ 
