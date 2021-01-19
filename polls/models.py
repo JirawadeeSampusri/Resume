@@ -10,10 +10,15 @@ class Info(models.Model):
     last_name = models.CharField("Last Name", default="",max_length=254)
     gender =  models.CharField("Gender", default="",max_length=254)
     nationality = models.CharField("Nationality", default="",max_length=254)
-    interest = models.CharField('Interest', default="", max_length=100)
+    interest = models.TextField('Short Description', default="", max_length=300)
     email = models.EmailField("E-mail", default="",max_length=254)
-    address = models.CharField("Address", default="",max_length=125)
-    short_description = models.CharField('Short Description', default="", max_length=100)
+    address = models.CharField("Address", default="",max_length=500)
+    short_description = models.TextField('Short Description', default="", max_length=300)
+    university = models.CharField('University', default="", max_length=80)
+    bachelor = models.CharField('Bachelor', default="", max_length=80)
+    major = models.CharField('Major', default="", max_length=80)
+    start_study = models.DateTimeField('Start Date', default="YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ]")
+    end_study = models.DateTimeField('End Date', default="YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ]")
 
     def get_photo(self):
         return self.photo
@@ -39,14 +44,6 @@ class Info(models.Model):
     def get_interest(self):
         return self.interest
     
-class Education(models.Model):
-    """ Model for put the infomation of event to database. """
-    university = models.TextField('University', default="", max_length=80)
-    bachelor = models.TextField('Bachelor', default="", max_length=80)
-    major = models.TextField('Major', default="", max_length=80)
-    start_study = models.DateTimeField('Start Date', default=timezone.now())
-    end_study = models.DateTimeField('End Date', default=timezone.now())
-
     def get_university(self):
         return self.university
 

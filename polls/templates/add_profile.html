@@ -24,33 +24,46 @@
                     <span class="text-title">Create Resume</span>
                     <hr class="line">
                     <div class="input">
-                   
                     <div class="photo">
                     Profile Photo
                     {{ form.photo }}
                     </div>
                     <br>
+                    Profile
+                    <br>
                     Name
                     {{ form.first_name }} 
                     {{ form.last_name }}
-                    <br>
                     Gender
                     {{ form.gender }}
-                    <br>
                     Nationality
                     {{ form.nationality }}
+                    <br>
+                    Email
+                    {{ form.email }}
+                    Address
+                    {{ form.address}}
                     <br>
                     Interest
                     {{ form.interest }}
                     <br>
-                    Email
-                    {{ form.email }}
-                    <br>
-                    Address
-                    {{ form.address}}
-                    <br>
                     Short Description
                     {{ form.short_description}}
+                    <br>
+                    Education
+                    <br>
+                    University
+                    {{ form.university}} 
+                    Bachelor
+                    {{ form.bachelor }}
+                    Major
+                    {{ form.major }}
+                    <br>
+                    StartDate
+                    {{ form.start_study }}
+                    EndDate
+                    {{ form.end_study }}
+                    <br>
                     <button id="submit-button" type="submit" value="POST"> SUBMIT </button>
                     </div>
                 </form>
