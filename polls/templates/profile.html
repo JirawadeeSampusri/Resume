@@ -10,57 +10,55 @@
     <meta name="HandheldFriendly" content="true"> 
 </head>
 
-<body style="background-color:pink;">
-    <nav class="nav-bar">
-    </nav>
-    <div class="row">
-        <div class="">
-            <img src="{{ info.get_photo.url }}" width="350px" height="auto" />
-        </div>
+<body >
+        <div class = "create-container">
+            <div class="wrap-container">
 
-        <div class="">
-            <h4 id="head-style"> Profile Detail </h4>
-            <br>
-            <div class="input">
+                <div class="class="create-form"">
+                    <div class="input">
+                    <div class="photo">
+                        <img src="{{ info.get_photo.url }}" width="350px" height="auto" />
+                    </div>
+                    <h4 id="head-style"> Profile Detail </h4>
+                    <br>
                     Profile
                     <br>
-                    Name
-                    {{ info.first_name }} 
-                    {{ info.last_name }}
-                    Gender
-                    {{ info.gender }}
-                    Nationality
-                    {{ info.nationality }}
+                    Name: {{ info.first_name }} {{ info.last_name }}
+                    Gender: {{ info.gender }}
+                    Nationality: {{ info.nationality }}
                     <br>
-                    Email
-                    {{ info.email }}
+                    Birth: {{ info.birth }}
+                    Email: {{ info.email }}
+                    Tel: {{ info.tel }}
+                    <br>
+                    <br>
                     Location
                     <br>
-                    Address
-                    {{ info.address}}
+                    Address:{{ info.address}}
                     <br>
-                    Interest
+                    Interest: 
                     {{ info.interest }}
+                    <br>
+                    Skills: 
+                    {{ info.skill }}
                     <br>
                     Short Description
                     {{ info.short_description}}
                     <br>
+                    <br>
                     Education
                     <br>
-                    University
-                    {{ info.university}} 
-                    Bachelor
-                    {{ info.bachelor }}
-                    Major
-                    {{ info.major }}
+                    University: {{ info.university}} Branch: {{ info.bachelor }}
                     <br>
-                    StartDate
-                    {{ info.start_study }}
-                    EndDate
-                    {{ info.end_study }}
-         
+                    Bachelor: {{ info.bachelor }} Major: {{ info.major }}
+                    <br>
+                    GPA: {{ info.gpa }} 
+                    <br>
+                    StartDate: {{ info.start_study }} EndDate: {{ info.end_study }}
+          
+           </div>
         </div>
-    </div>
+    
 
 </body>
 
