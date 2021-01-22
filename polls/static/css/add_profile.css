@@ -4,9 +4,6 @@
     font-family: oblique, italic;
     
 }
-body{
-    background: linear-gradient(rgb(153, 170, 247), rgb(159, 200, 253),pink);
-}
 
 /* alert messages
 .alert {
@@ -63,11 +60,10 @@ h5 {
     letter-spacing: 0.03em;
 }
 form textarea{
-    width: 95%;
+    width: 80%;
     font-size: 0.1em;
     padding: 1em;
     margin: 1em;
-    border: none;
     resize: none;
     overflow: hidden;
     border-bottom: solid 2px #474544;
@@ -197,3 +193,8 @@ form .input button:focus {
         padding: 3.5em 2.5em 3.5em 2.5em;
     }
 }
+
+.colume4{
+    margin-left: 16%;
+}
+

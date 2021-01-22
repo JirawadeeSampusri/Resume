@@ -49,9 +49,6 @@ def index(request):
     all_info = Info.objects.all()
     print(all_info)
     return render(request, 'index.html', {'all_info':all_info})
-# def resume(request):
-#     """ 
-#     Function for create event with form and only logged in user can create the event 
-#     and render create event page.
-#     """
-#     return render(request, 'polls/resume.html')
+
+def main(request):
+    return render(request, 'main.html')

@@ -8,59 +8,61 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
-<body >
-        <div class = "create-container">
-            <div class="wrap-container">
-
-                <div class="class="create-form"">
-                    <div class="input">
-                    <div class="photo">
-                        <img src="{{ info.get_photo.url }}" width="350px" height="auto" />
-                    </div>
-                    <h4 id="head-style"> Profile Detail </h4>
-                    <br>
-                    Profile
-                    <br>
-                    Name: {{ info.first_name }} {{ info.last_name }}
-                    Gender: {{ info.gender }}
-                    Nationality: {{ info.nationality }}
-                    <br>
-                    Birth: {{ info.birth }}
-                    Email: {{ info.email }}
-                    Tel: {{ info.tel }}
-                    <br>
-                    <br>
-                    Location
-                    <br>
-                    Address:{{ info.address}}
-                    <br>
-                    Interest: 
-                    {{ info.interest }}
-                    <br>
-                    Skills: 
-                    {{ info.skill }}
-                    <br>
-                    Short Description
-                    {{ info.short_description}}
-                    <br>
-                    <br>
-                    Education
-                    <br>
-                    University: {{ info.university}} Branch: {{ info.bachelor }}
-                    <br>
-                    Bachelor: {{ info.bachelor }} Major: {{ info.major }}
-                    <br>
-                    GPA: {{ info.gpa }} 
-                    <br>
-                    StartDate: {{ info.start_study }} EndDate: {{ info.end_study }}
-          
-           </div>
+<body>
+    <div>
+        <div class="jumbotron text-center">
+            <h1>Profile Detail</h1>
+            <p></p> 
         </div>
+        <div class="colume4">
+            <br>
+            <div class="photo">
+                <img src="{{ info.get_photo.url }}" width="350px" height="auto" />
+            </div>
+            Profile
+            <br>
+            Name: {{ info.first_name }} {{ info.last_name }}
+            Gender: {{ info.gender }}
+            Nationality: {{ info.nationality }}
+            <br>
+            Birth: {{ info.birth }}
+            Email: {{ info.email }}
+            Tel: {{ info.tel }}
+            <br>
+            <br>
+            Location
+            <br>
+            Address:{{ info.address}}
+            <br>
+            Interest: 
+            {{ info.interest }}
+            <br>
+            Skills: 
+            {{ info.skill }}
+            <br>
+            Short Description
+            {{ info.short_description}}
+            <br>
+            <br>
+            Education
+            <br>
+            University: {{ info.university}} Branch: {{ info.bachelor }}
+            <br>
+            Bachelor: {{ info.bachelor }} Major: {{ info.major }}
+            <br>
+            GPA: {{ info.gpa }} 
+            <br>
+            StartDate: {{ info.start_study }} EndDate: {{ info.end_study }}
     
+           </div>
+        </div>  
+    </div>
 
 </body>
-
 
 </html>

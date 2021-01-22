@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Bootstrap</title>
   {% load static %}
   <meta charset="utf-8">
   <link rel="stylesheet"  href="{% static '/css/index.css' %}">
@@ -15,16 +15,9 @@
 <body>
 
 <div class="jumbotron text-center">
-  <h1>Resume List</h1>
-</div>
-  
-<div>
-    <div class="colume4">
-      <h3></h3>
-      {% for info in all_info %}
-        <a href="{% url 'profile' info.id %}"><h4>{{info.first_name}} {{info.last_name}}</h4>
-      {% endfor %}
-    </div>  
+  <h1>Resumey</h1>
+  <p>- an online create Resume web-application</p> 
+  <p></p> 
 </div>
 
 </body>

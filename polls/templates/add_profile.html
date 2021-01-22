@@ -11,77 +11,89 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
 </head>
 
 </head>
 <body>   
 </form>
+    <div class="jumbotron text-center">
+        <h1>Create Resume</h1>
+        <p></p> 
+    </div>
     <div class="main">
-        <div class="create-container">
-            <div class="wrap-container">
-                <form class="create-form" method="POST"  enctype="multipart/form-data">
-                    {% csrf_token %}
-                    <span class="text-title">Create Resume</span>
-                    <hr class="line">
-                    <div class="input">
-                    <div class="photo">
-                    Profile Photo
-                    {{ form.photo }}
-                    </div>
-                    <br>
-                    Profile
-                    <br>
-                    Name
-                    {{ form.first_name }} 
-                    {{ form.last_name }}
-                    Gender
-                    {{ form.gender }}
-                    Nationality
-                    {{ form.nationality }}
-                    <br>
-                    Birth[YYYY-MM-DD]
-                    {{ form.birth }}
-                    Email
-                    {{ form.email }}
-                    Tel
-                    {{ form.tel }}
-                    <br>
-                    Address
-                    {{ form.address}}
-                    <br>
-                    Education
-                    <br>
-                    University
-                    {{ form.university}} 
-                    Branch
-                    {{ form.branch}} 
-                    Bachelor
-                    {{ form.bachelor }}
-                    <br>
-                    Major
-                    {{ form.major }}
-                    GPA
-                    {{ form.gpa }}
-                    <br>
-                    StartDate[YYYY-MM-DD]
-                    {{ form.start_study }}
-                    EndDate[YYYY-MM-DD]
-                    {{ form.end_study }}
-                    <br>
-                    <br>
-                    Skills
-                    {{ form.skill }}
-                    <br>
-                    Interest
-                    {{ form.interest }}
-                    <br>
-                    Short Description
-                    {{ form.short_description}}
-                    <br>
-                    <button id="submit-button" type="submit" value="POST"> SUBMIT </button>
-                    </div>
-                </form>
-            </div>
+        <div class="colume4">
+            <form class="create-form" method="POST"  enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="input">
+                <div class="photo">
+                Profile Photo
+                {{ form.photo }}
+                </div>
+                <br>
+                Profile
+                <br>
+                <br>
+                Name
+                {{ form.first_name }} 
+                {{ form.last_name }}
+                Gender
+                {{ form.gender }}
+                Nationality
+                {{ form.nationality }}
+                <br>
+                <br>
+                Birth[YYYY-MM-DD]
+                {{ form.birth }}
+                Email
+                {{ form.email }}
+                Tel
+                {{ form.tel }}
+                <br>
+                <br>
+                Address
+                <br>
+                {{ form.address}}
+                <br>
+                <br>
+                Education
+                <br>
+                <br>
+                University
+                {{ form.university}} 
+                Branch
+                {{ form.branch}} 
+                Bachelor
+                {{ form.bachelor }}
+                <br>
+                <br>
+                Major
+                {{ form.major }}
+                GPA
+                {{ form.gpa }}
+                <br>
+                <br>
+                StartDate[YYYY-MM-DD]
+                {{ form.start_study }}
+                EndDate[YYYY-MM-DD]
+                {{ form.end_study }}
+                <br>
+                <br>
+                Skills
+                <br>
+                {{ form.skill }}
+                <br>
+                Interest
+                <br>
+                {{ form.interest }}
+                <br>
+                Short Description
+                <br>
+                {{ form.short_description}}
+                <br>
+                <button id="submit-button" type="submit" value="POST"> SUBMIT </button>
+                </div>
+            </form>
         </div>
     </div> 
 </body>
