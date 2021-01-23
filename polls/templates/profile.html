@@ -24,40 +24,54 @@
             <div class="photo">
                 <img src="{{ info.get_photo.url }}" width="350px" height="auto" />
             </div>
-            Profile
-            <br>
-            Name: {{ info.first_name }} {{ info.last_name }}
-            Gender: {{ info.gender }}
-            Nationality: {{ info.nationality }}
-            <br>
-            Birth: {{ info.birth }}
-            Email: {{ info.email }}
-            Tel: {{ info.tel }}
-            <br>
-            <br>
-            Location
-            <br>
-            Address:{{ info.address}}
-            <br>
-            Interest: 
-            {{ info.interest }}
-            <br>
-            Skills: 
-            {{ info.skill }}
-            <br>
-            Short Description
-            {{ info.short_description}}
-            <br>
-            <br>
-            Education
-            <br>
-            University: {{ info.university}} Branch: {{ info.bachelor }}
-            <br>
-            Bachelor: {{ info.bachelor }} Major: {{ info.major }}
-            <br>
-            GPA: {{ info.gpa }} 
-            <br>
-            StartDate: {{ info.start_study }} EndDate: {{ info.end_study }}
+           
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                <h3>Profile</h3>
+                Name: {{ info.first_name }} {{ info.last_name }}
+                <br>
+                Gender: {{ info.gender }}
+                <br>
+                Nationality: {{ info.nationality }}
+                <br>
+                Birth: {{ info.birth }}
+                <br>
+                Email: {{ info.email }}
+                <br>
+                Tel: {{ info.tel }}
+                <br>
+                <h4>Location</h4>
+                Address:{{ info.address}}
+                <br>
+                </div>
+                <div class="col-sm-4">
+                <h3>Education</h3>
+
+                University: {{ info.university}} Branch: {{ info.bachelor }}
+                <br>
+                Bachelor: {{ info.bachelor }} Major: {{ info.major }}
+                <br>
+                GPA: {{ info.gpa }} 
+                <br>
+                StartDate: {{ info.start_study }} 
+                <br>
+                EndDate: {{ info.end_study }}
+                <br>
+                <h3>Interest</h3>
+                {{ info.interest }}
+                </div>
+                <div class="col-sm-4">
+                <h3>Skills</h3>
+                {{ info.skill }}
+                <br>
+                <h3>Short Description</h3>
+                {{ info.short_description}}
+                <br>
+            </div>
+        </div>
+  </div>
+</div>
     
            </div>
         </div>  

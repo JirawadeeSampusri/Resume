@@ -1,7 +1,7 @@
 * {
     padding: 0;
     font-family: oblique, italic;
-    font-size: 1.1em;
+    font-size: 1em;
  
     
 }
@@ -66,9 +66,12 @@
 }
 
 .colume4{
-    margin-left: 30%;
+    margin-left: 13%;
 }
 
+.colume4 img{
+    margin-left: 14%;
+}
 .photo{
     margin-left:11em;
     margin-bottom: 2.5em;
