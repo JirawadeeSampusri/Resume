@@ -6,8 +6,6 @@ from django.conf.urls.static import static
 from django.conf.urls import url
 
 urlpatterns = [
-    path('',views.main, name='main'),
-    path('addprofile/',views.add_profile, name='add_profile'),
-    path('profile/<int:info_id>/',views.profile, name='profile'),
-    path('index/',views.index, name='index')
+    path('contactme/',views.add_profile, name='add_profile'),
+    path('',views.profile, name='profile'),
 ]

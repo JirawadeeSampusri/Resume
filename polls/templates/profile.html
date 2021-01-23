@@ -19,57 +19,85 @@
             <h1>Profile Detail</h1>
             <p></p> 
         </div>
+        <br>
+       <img src="/Users/mac/Desktop/Resume/media/Jirawadee.jpg" width="18" height="28">
         <div class="colume4">
-            <br>
-            <div class="photo">
-                <img src="{{ info.get_photo.url }}" width="350px" height="auto" />
-            </div>
            
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
-                <h3>Profile</h3>
-                Name: {{ info.first_name }} {{ info.last_name }}
+                <h2>Jirawadee Sampusri</h2>
+                <h5>- Software Engineering -</h5>
+             
+                <h3>About</h3>
+           
+                I am an enthusiastic student making an effort to experience and learn new challenges 
+                in which I can apply and adapt my knowledge and skills for continuous improvement. 
+                When I work as a team,  I also feel more motivated and approachable to assist and support my coworkers when occasion demands.
                 <br>
-                Gender: {{ info.gender }}
+                <h3>Coding language</h3>
+                HTML
                 <br>
-                Nationality: {{ info.nationality }}
+                CSS 
                 <br>
-                Birth: {{ info.birth }}
+                Javascript 
                 <br>
-                Email: {{ info.email }}
+                Python
                 <br>
-                Tel: {{ info.tel }}
+                NodeRed
                 <br>
-                <h4>Location</h4>
-                Address:{{ info.address}}
+                GraphQL
+                <br>
+                SQL
+                <br>
+                SPARQL 
                 <br>
                 </div>
                 <div class="col-sm-4">
                 <h3>Education</h3>
-
-                University: {{ info.university}} Branch: {{ info.bachelor }}
+           
+                <h4>- High School- Sciences and Mathematics Program</h4>
+                <h5>  Wiangjedee Wittaya School | 2012 - 2018</h5>
+                <h6>Have joined many English competition skills in Speech Contest and       
+                won prizes all over 6 years</h6>
                 <br>
-                Bachelor: {{ info.bachelor }} Major: {{ info.major }}
-                <br>
-                GPA: {{ info.gpa }} 
-                <br>
-                StartDate: {{ info.start_study }} 
-                <br>
-                EndDate: {{ info.end_study }}
-                <br>
+                <h4>- Bachelor of SOFTWARE and knowledge engineering Program</h4>
+                <h5>  International Undergraduate Program (IUP), Kasetsart University | 2018 - 2022</h5>
+                <h6>- Currently studying in a junior year (3rd year student)</h6>
                 <h3>Interest</h3>
-                {{ info.interest }}
+                Board Games
+                <br>
+                Reading
+                <br>
+                Swimming
+                <br>
+                Travelling
                 </div>
                 <div class="col-sm-4">
-                <h3>Skills</h3>
-                {{ info.skill }}
+                <h3>Work Experience</h3>
+            
+                <h4>- Myform evaluator web-application</h4>
+                <h5>Based on Django Python Framework | 2019</h5>
+                <h5>Github Link:  https://github.com/ChatchapongC/myform</h5>
                 <br>
-                <h3>Short Description</h3>
-                {{ info.short_description}}
+                <h4>- Kvent - an online booking and appointment web-application.</h4>
+                <h5>Based on Django Python Framework | 2020</h5>
+                <h5>Github Link: https://github.com/bleachjade/Kvent  or      
+                              https://kventeventapplication.herokuapp.com/</h5>
+                <br>
+                <h4>- Selenium Robot Framework</h4>
+                <h5>Using selenium robot framework in order to test Kvent Application project.</h5>
+                <br>
+                <h4>- Movies api</h4>
+                <h5>Used Restful API development with open-API</h5>
+                <h5>Github Link:  https://github.com/JirawadeeSampusri/MoviesApi</h5>
                 <br>
             </div>
+
         </div>
+        <a class="btn btn-primary btn-lg btn-block" href="{% url 'add_profile' %}">Contact Me</a>
+        <br>
+        <br>
   </div>
 </div>
     

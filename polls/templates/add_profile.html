@@ -18,7 +18,7 @@
 <body>   
 </form>
     <div class="jumbotron text-center">
-        <h1>Create Resume</h1>
+        <h1>Contact Me</h1>
         <p></p> 
     </div>
     <div class="main">
@@ -26,73 +26,31 @@
             <form class="create-form" method="POST"  enctype="multipart/form-data">
                 {% csrf_token %}
                 <div class="input">
-                <div class="photo">
-                Profile Photo
-                {{ form.photo }}
-                </div>
-                <br>
-                Profile
-                <br>
-                <br>
                 Name
                 {{ form.first_name }} 
                 {{ form.last_name }}
-                Gender
-                {{ form.gender }}
-                Nationality
-                {{ form.nationality }}
                 <br>
                 <br>
-                Birth[YYYY-MM-DD]
-                {{ form.birth }}
                 Email
                 {{ form.email }}
                 Tel
                 {{ form.tel }}
                 <br>
                 <br>
-                Address
-                <br>
-                {{ form.address}}
-                <br>
-                <br>
-                Education
-                <br>
-                <br>
-                University
-                {{ form.university}} 
-                Branch
-                {{ form.branch}} 
-                Bachelor
-                {{ form.bachelor }}
-                <br>
-                <br>
-                Major
-                {{ form.major }}
-                GPA
-                {{ form.gpa }}
-                <br>
-                <br>
-                StartDate[YYYY-MM-DD]
-                {{ form.start_study }}
-                EndDate[YYYY-MM-DD]
-                {{ form.end_study }}
-                <br>
-                <br>
-                Skills
-                <br>
-                {{ form.skill }}
-                <br>
-                Interest
-                <br>
-                {{ form.interest }}
-                <br>
                 Short Description
                 <br>
                 {{ form.short_description}}
                 <br>
+                <hr>
+                <h3>or</h3>
+                <br>
+                <h5>Email: jirawadee.sa@ku.th<h5>
+                <h5>Tel: 098-2624362</h5>
+                <br>
+                <br>
                 <button id="submit-button" type="submit" value="POST"> SUBMIT </button>
                 </div>
+            
             </form>
         </div>
     </div> 
