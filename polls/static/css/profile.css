@@ -1,9 +1,10 @@
 * {
     padding: 0;
     font-family: oblique, italic;
+    font-size: 1.1em;
+ 
     
 }
-
 /*multiplatform device size*/
 @media screen and (max-width: 1024px) {
     .nav-bar {
@@ -65,11 +66,11 @@
 }
 
 .colume4{
-    margin-left: 35%;
+    margin-left: 30%;
 }
 
 .photo{
-    margin-left:12em;
+    margin-left:11em;
     margin-bottom: 2.5em;
 }
 
